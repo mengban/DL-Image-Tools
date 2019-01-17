@@ -1,10 +1,14 @@
+''''
+功能:实现模型结果的可视化
+用法：将标注文件、图片分别放至文件夹xml、jpg中 可视文件会保存至save
+'''
 import os
 import xml.etree.ElementTree as xmlET
 import cv2
 
-file_path_img = 'jpg'
-file_path_xml = 'xml'
-save_file_path = 'save'
+file_path_img = 'data/jpg'
+file_path_xml = 'data/xml'
+save_file_path = 'data/save'
 
 def drawBox():
     pathDir = os.listdir(file_path_xml)
